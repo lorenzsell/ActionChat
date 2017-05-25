@@ -19,6 +19,7 @@ jQuery(document).on('turbolinks:load', function() {
         return messages_to_bottom();
       },
       send_message: function(message, chat_room_id) {
+        console.log(App.global_chat);
         return this.perform('send_message', {
           message: message,
           chat_room_id: chat_room_id
